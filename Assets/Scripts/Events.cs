@@ -4,4 +4,5 @@ using System;
 public class Events : MonoBehaviour
 {
     public Action<float> CatHappinessChanged;
+    public Action CatHairSold;
 }

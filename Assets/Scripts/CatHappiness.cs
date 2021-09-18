@@ -5,7 +5,7 @@ public class CatHappiness : MonoBehaviour
     [Tooltip("The maximum cat happiness that can be reached at the final level")]
     public float ultimateMaxHappiness;
     public float maxHappinessPerLevel;
-    public float happinessDecreasePerSecond = 0.1f;
+    public float happinessDecreasePerSecond = -0.1f;
 
     float currentHappiness;
     float currentTime;
