@@ -13,5 +13,18 @@ public class ShopItem : MonoBehaviour
     [SerializeField]
     private float timeTaken;
     [SerializeField]
-    private bool isLocked;
+    private bool isItemBought = false;
+
+    public void BuyItem()
+    {
+        if (isItemBought)
+            return;
+
+        bool doesPlayerHaveEnoughMoney = GameManager.Instance.currentMoney >= itemPrice;
+        if (!doesPlayerHaveEnoughMoney)
+            return;
+
+        isItemBought = true;
+        GameManager.Instance.currentMoney -= itemPrice;
+    }
 }
