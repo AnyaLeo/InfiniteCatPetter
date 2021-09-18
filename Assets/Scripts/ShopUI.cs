@@ -24,25 +24,25 @@ public class ShopUI : MonoBehaviour
             child.gameObject.SetActive(false);
         }
 
-        isVisible = false;
+        isShopVisible = false;
     }
 
     void OnMouseDown()
     {   
-        if (isVisible)
+        if (isShopVisible)
         {
             foreach (Transform child in shopIconBtn.transform)
             {
                 child.gameObject.SetActive(false);
             }
-            isVisible = false;
+            isShopVisible = false;
         } else
         {
             foreach (Transform child in shopIconBtn.transform)
             {
                 child.gameObject.SetActive(true);
             }
-            isVisible = true;
+            isShopVisible = true;
         }
         Debug.Log("click shop");
     }
