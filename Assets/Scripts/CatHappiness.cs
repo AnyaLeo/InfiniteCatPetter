@@ -25,19 +25,36 @@ public class CatHappiness : MonoBehaviour
         eventSystem.CatHappinessChanged -= OnCatHappinessChanged;
     }
 
-    private void OnCatHappinessChanged(float newHappinessValue)
+    private void OnCatHappinessChanged(float happinessChange)
     {
-        currentHappiness += newHappinessValue;
+        AddToCurrentHappiness(happinessChange);
     }
 
     private void Update()
     {
         if (currentTime >= 1f)
         {
-            currentHappiness -= happinessDecreasePerSecond;
+            AddToCurrentHappiness(happinessDecreasePerSecond);
             currentTime = 0f;
         }
 
         currentTime += Time.deltaTime;
+    }
+
+    private void AddToCurrentHappiness(float happinessChange)
+    {
+        currentHappiness += happinessChange;
+
+        if (currentHappiness <= 0f)
+        {
+            currentHappiness = 0f;
+        }
+
+        if (currentHappiness >= maxHappinessPerLevel)
+        {
+            currentHappiness = maxHappinessPerLevel;
+        }
+
+        GameManager.Instance.currentCatHappiness = currentHappiness;
     }
 }
