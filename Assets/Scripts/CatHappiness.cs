@@ -34,7 +34,7 @@ public class CatHappiness : MonoBehaviour
     {
         if (currentTime >= 1f)
         {
-            AddToCurrentHappiness(happinessDecreasePerSecond);
+            AddToCurrentHappiness(-happinessDecreasePerSecond);
             currentTime = 0f;
         }
 
