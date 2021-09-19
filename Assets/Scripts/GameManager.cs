@@ -17,6 +17,13 @@ public class GameManager : Singleton<GameManager>
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
 
+    public GameObject doomsday;
+
+    private void Start()
+    {
+        doomsday.SetActive(false);
+    }
+
     public void IncrementCurrentLevel()
     {
         currentLevel++;
@@ -25,7 +32,7 @@ public class GameManager : Singleton<GameManager>
         
         if (currentLevel >= maxLevels)
         {
-            // trigger the apocalypse
+            doomsday.SetActive(true);
         }
     }
     private void Update()
@@ -33,6 +40,11 @@ public class GameManager : Singleton<GameManager>
         if (Input.GetKeyDown("space"))
         {
             changeCursor(cursorTexture);
+        }
+
+        if (currentLevel >= maxLevels)
+        {
+            doomsday.SetActive(true);
         }
     }
 
