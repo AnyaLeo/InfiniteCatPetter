@@ -7,17 +7,36 @@ public class PetCat : MonoBehaviour
     float mousex1;
     float mousey1;
     Vector3 mousepos;
+    public float increment = 1;
 
     public float catHappinessPerPet = 5f;
     public float catHairPerPet = 1f;
 
-    public GameObject catParticles;
+    private float lastTimePetHappened;
+    [Tooltip("How long we wait since the last pet to cancel the purr")]
+    public float timeBetweenPetsPurrThreshold = 3f;
+
+    CatSounds catSounds;
 
     void Awake()
     {
         float mouseXValue = Input.GetAxis("Mouse X");
         float mouseYValue = Input.GetAxis("Mouse Y");
         mousepos = Input.mousePosition;
+    }
+
+    private void Start()
+    {
+        catSounds = FindObjectOfType<CatSounds>();
+    }
+
+    private void Update()
+    {
+        float timeSinceLastPet = Time.time - lastTimePetHappened;
+        if (timeSinceLastPet > timeBetweenPetsPurrThreshold && catSounds != null)
+        {
+            catSounds.DeactivatePurr();
+        }
     }
 
     private void OnMouseDown()
@@ -33,13 +52,15 @@ public class PetCat : MonoBehaviour
         float dist = Mathf.Sqrt(Mathf.Pow((mousepos.x - mousex1), 2) + Mathf.Pow((mousepos.y - mousey1), 2));
         if (dist > 50)
         {
-            print("Working");
-            Events.Instance.CatHappinessChanged(catHappinessPerPet);
-            GameManager.Instance.currentCatHair += catHairPerPet;
+            lastTimePetHappened = Time.time;
+            if (catSounds != null)
+            {
+                catSounds.ActivatePurr();
+            }
 
-            //GameObject particleSystem = Instantiate(catParticles);
-            //particleSystem.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //particleSystem.transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Events.Instance.CatHappinessChanged(catHappinessPerPet);
+            CatHairManager.Instance.ChangeCatHair(increment);
+
         }
     }
 }

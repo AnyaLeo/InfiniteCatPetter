@@ -8,6 +8,7 @@ public class CatHappiness : MonoBehaviour
     public float ultimateMaxHappiness = 100f;
     public float maxHappinessPerLevel;
     public float happinessDecreasePerSecond = -0.1f;
+    
 
     float currentHappiness;
     float currentTime;
