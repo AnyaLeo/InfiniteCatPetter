@@ -67,12 +67,12 @@ public class ShopItem : MonoBehaviour
         priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "SOLD!";
         float happinessDecrease = GameManager.Instance.awayDecreaseRate * timeTaken;
 
-        GameManager.Instance.currentMoney -= itemPrice;
         GameManager.Instance.catHairGainBonus = hairGainEffect;
         Events.Instance.CatHappinessChanged(happinessDecrease);
         Events.Instance.CatHappinessChanged(happinessEffect);
 
         CatHappiness.Instance.maxHappinessPerLevel += 25f;
+        GameObject.Find("MoneyManager").GetComponent<MoneyManager>().AddToMoney(-itemPrice);
     }
 
     private void greyOutBought()

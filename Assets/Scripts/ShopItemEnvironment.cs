@@ -54,7 +54,7 @@ public class ShopItemEnvironment : MonoBehaviour
         priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "SOLD!";
         greyOutBought();
         GameManager.Instance.IncrementCurrentLevel();
-        GameManager.Instance.currentMoney -= itemPrice;
+        GameObject.Find("MoneyManager").GetComponent<MoneyManager>().AddToMoney(-itemPrice);
     }
 
 

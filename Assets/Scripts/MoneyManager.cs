@@ -41,9 +41,11 @@ public class MoneyManager : Singleton<MoneyManager>
         Debug.Log("Cat happiness decreased " + happinessDecrease);
     }
 
-    private void AddToMoney(float moneyEarned)
+    public void AddToMoney(float moneyEarned)
     {
+        Debug.Log("help " + moneyEarned + " " + GameManager.Instance.currentMoney);
         GameManager.Instance.currentMoney += moneyEarned;
+        Debug.Log("help1 " + GameManager.Instance.currentMoney);
         moneyText.text = GameManager.Instance.currentMoney.ToString("f0");
     }
 
