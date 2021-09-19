@@ -2104,9 +2104,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 83669011}
     m_Modifications:
     - target: {fileID: 33731352, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemTitle
+      value: Soft Brush
+      objectReference: {fileID: 0}
+    - target: {fileID: 33731352, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
       objectReference: {fileID: 1515178980}
+    - target: {fileID: 33731352, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemDescription
+      value: A brush for the most magnificent of manes.
+      objectReference: {fileID: 0}
     - target: {fileID: 33731352, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemdescriptorUI
       value: 
@@ -2156,9 +2164,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1515178983}
     - target: {fileID: 799546200, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemTitle
+      value: Hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 799546200, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
       objectReference: {fileID: 1515178980}
+    - target: {fileID: 799546200, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemDescription
+      value: A reliable hand to give reliable scritches.
+      objectReference: {fileID: 0}
     - target: {fileID: 799546200, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemdescriptorUI
       value: 
@@ -2200,9 +2216,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2800000, guid: f4cbe86ecbd902a4fb618841b4293069, type: 3}
     - target: {fileID: 896940791, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemTitle
+      value: Square Brush
+      objectReference: {fileID: 0}
+    - target: {fileID: 896940791, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
       objectReference: {fileID: 1515178980}
+    - target: {fileID: 896940791, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemDescription
+      value: A nice comb to clear up tangles.
+      objectReference: {fileID: 0}
     - target: {fileID: 896940791, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemdescriptorUI
       value: 
@@ -2312,9 +2336,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1192970816, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemTitle
+      value: Magic Brush
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192970816, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
       objectReference: {fileID: 1515178980}
+    - target: {fileID: 1192970816, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemDescription
+      value: There's something odd about this brush, but it looks cool.
+      objectReference: {fileID: 0}
     - target: {fileID: 1192970816, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemdescriptorUI
       value: 
@@ -4820,11 +4852,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab2ac974edadea48bfcaba05b017ba7, type: 3}
---- !u!1 &6560116367244861351 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8907469511744354948, guid: 0ab2ac974edadea48bfcaba05b017ba7, type: 3}
-  m_PrefabInstance: {fileID: 6560116367244861350}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7470367276469684514
 Transform:
   m_ObjectHideFlags: 0
