@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CatHappiness : MonoBehaviour
+public class CatHappiness : Singleton<CatHappiness>
 {
     [Tooltip("The maximum cat happiness that can be reached at the final level")]
     public float ultimateMaxHappiness = 100f;

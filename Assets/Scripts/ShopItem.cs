@@ -44,6 +44,8 @@ public class ShopItem : MonoBehaviour
         GameManager.Instance.catHairGainBonus = hairGainEffect;
         Events.Instance.CatHappinessChanged(happinessDecrease);
         Events.Instance.CatHappinessChanged(happinessEffect);
+
+        CatHappiness.Instance.maxHappinessPerLevel += 25f;
     }
 
     private void changeActiveTool()
