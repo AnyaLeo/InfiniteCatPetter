@@ -56,8 +56,16 @@ public class CatSounds : MonoBehaviour
 
     public void DeactivatePurr()
     {
-        StopAllCoroutines();
-        StartCoroutine(LerpPurr(purr.volume, 0f, 2f));
+        //if (!purr.isPlaying)
+        //{
+        //    purr.Stop();
+        //    return;
+        //}
+
+        //StopAllCoroutines();
+        //StartCoroutine(LerpPurr(purr.volume, 0f, 2f));
+
+        purr.Stop();
     }
 
     IEnumerator LerpPurr(float startVolume, float endVolume, float duration)

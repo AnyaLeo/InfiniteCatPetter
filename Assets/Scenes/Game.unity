@@ -903,6 +903,10 @@ PrefabInstance:
       propertyPath: catParticles
       value: 
       objectReference: {fileID: 7088229077929147682, guid: 0364cfb2707e6044da4308eaec87c8b5, type: 3}
+    - target: {fileID: 3828330135963178491, guid: e1eddcda8d97c4f229f5d2dc937310e2, type: 3}
+      propertyPath: timeBetweenPetsPurrThreshold
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3828330135963178492, guid: e1eddcda8d97c4f229f5d2dc937310e2, type: 3}
       propertyPath: m_Name
       value: Cat
