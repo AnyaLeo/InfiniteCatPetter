@@ -20,7 +20,7 @@ public class ShopItem : MonoBehaviour
         if (isItemBought)
         {
             Debug.Log("Already bought item: " + itemName);
-            // change active tool to item
+            changeActiveTool();
         } else 
         {
             Debug.Log("Buying item: " + itemName);
@@ -44,5 +44,10 @@ public class ShopItem : MonoBehaviour
         GameManager.Instance.catHairGainBonus = hairGainEffect;
         Events.Instance.CatHappinessChanged(happinessDecrease);
         Events.Instance.CatHappinessChanged(happinessEffect);
+    }
+
+    private void changeActiveTool()
+    {
+        GameManager.Instance.catHairGainBonus = hairGainEffect;
     }
 }
