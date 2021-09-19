@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShopItemUI : MonoBehaviour
 {
@@ -19,8 +20,8 @@ public class ShopItemUI : MonoBehaviour
     private void OnMouseEnter()
     {
         popUpDescription.SetActive(true);
-        itemTitleUI.GetComponentInParent<Text>().text = itemTitle;
-        itemdescriptorUI.GetComponentInParent<Text>().text = itemDescription;
+        itemTitleUI.GetComponentInParent<TextMeshProUGUI>().text = itemTitle;
+        itemdescriptorUI.GetComponentInParent<TextMeshProUGUI>().text = itemDescription;
         Vector3 cursorVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 popUpvector = new Vector3(cursorVector.x, cursorVector.y, 0);
         popUpDescription.transform.SetPositionAndRotation(popUpvector, popUpDescription.transform.rotation);
