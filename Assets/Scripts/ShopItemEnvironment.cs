@@ -9,6 +9,8 @@ public class ShopItemEnvironment : MonoBehaviour
     [SerializeField]
     int upgradeId;
     public bool isItemBought = false;
+    [SerializeField]
+    private Color boughtColor;
 
     public void OnMouseDown()
     {
@@ -16,12 +18,12 @@ public class ShopItemEnvironment : MonoBehaviour
         {
             Debug.Log("Already bought item: " + itemName);
             // change active tool to item
-        } 
+        }
         else if (upgradeId >= GameManager.Instance.currentLevel + 1)
         {
             Debug.Log("Can't buy this item yet: " + itemName);
-        } 
-        else 
+        }
+        else
         {
             Debug.Log("Buying item: " + itemName);
             BuyItem();
@@ -38,7 +40,14 @@ public class ShopItemEnvironment : MonoBehaviour
         }
 
         isItemBought = true;
+        greyOutBought();
         GameManager.Instance.IncrementCurrentLevel();
         GameManager.Instance.currentMoney -= itemPrice;
+    }
+
+
+    private void greyOutBought()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().color = boughtColor;
     }
 }

@@ -14,6 +14,8 @@ public class ShopItem : MonoBehaviour
     private float timeTaken;
     [SerializeField]
     private bool isItemBought = false;
+    [SerializeField]
+    private Color boughtColor;
 
     public void OnMouseDown()
     {
@@ -21,7 +23,8 @@ public class ShopItem : MonoBehaviour
         {
             Debug.Log("Already bought item: " + itemName);
             changeActiveTool();
-        } else 
+        }
+        else
         {
             Debug.Log("Buying item: " + itemName);
             BuyItem();
@@ -38,6 +41,7 @@ public class ShopItem : MonoBehaviour
         }
 
         isItemBought = true;
+        greyOutBought();
         float happinessDecrease = GameManager.Instance.awayDecreaseRate * timeTaken;
 
         GameManager.Instance.currentMoney -= itemPrice;
@@ -46,6 +50,11 @@ public class ShopItem : MonoBehaviour
         Events.Instance.CatHappinessChanged(happinessEffect);
 
         CatHappiness.Instance.maxHappinessPerLevel += 25f;
+    }
+
+    private void greyOutBought()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().color = boughtColor;
     }
 
     private void changeActiveTool()
