@@ -32,6 +32,9 @@ public class ShopItem : MonoBehaviour
             changeActiveTool();
         }
         priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "$" + (int)itemPrice;
+        if (itemPrice.Equals(0)) {
+            priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "FREE!";
+        }
 
     }
 
