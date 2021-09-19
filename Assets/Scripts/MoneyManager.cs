@@ -16,7 +16,7 @@ public class MoneyManager : MonoBehaviour
         eventSystem.CatHairSold -= OnCatHairSold;;
     }
 
-    private void OnCatHairSold()
+    public void OnCatHairSold()
     {
         // Current cat hair price is 1 piece of hair to 10 in money
         // Selling all current cat hair takes 8 hours, decreasing at 1 pt/hour
@@ -28,6 +28,9 @@ public class MoneyManager : MonoBehaviour
         AddToMoney(moneyEarned);
         eventSystem.CatHappinessChanged?.Invoke(happinessDecrease);
         removeCatHair(catHairSold);
+
+        Debug.Log("Selling cat hair, gained " + moneyEarned);
+        Debug.Log("Cat happiness decreased " + happinessDecrease);
     }
 
     private void AddToMoney(float moneyEarned)
