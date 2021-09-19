@@ -11,3 +11,5 @@ Programming by everyone else
 ## How to play
 
 Download one of the zipped Builds folders and give it a go!
+
+Web builds maybe coming. Sometime after the jam.
