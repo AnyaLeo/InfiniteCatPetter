@@ -1765,6 +1765,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 33731356, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33731356, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 33731356, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 33731356, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 545383833, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1789,6 +1805,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 896940791, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1801,6 +1833,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 1037414545, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1813,6 +1861,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 1037414547, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037414547, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037414547, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037414547, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 1182854134, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1825,6 +1889,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 1182854136, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182854136, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182854136, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182854136, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 1192970816, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1837,6 +1917,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 1192970820, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192970820, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192970820, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192970820, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 1348426358, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1849,6 +1945,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 1348426361, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348426361, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348426361, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348426361, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.4245283
+      objectReference: {fileID: 0}
     - target: {fileID: 1750270441, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1861,6 +1973,22 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 1750270443, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750270443, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.b
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750270443, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.g
+      value: 0.42745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750270443, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: boughtColor.r
+      value: 0.42745098
+      objectReference: {fileID: 0}
     - target: {fileID: 1944675948, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1899,7 +2027,7 @@ PrefabInstance:
       objectReference: {fileID: 1515178983}
     - target: {fileID: 178075164333598760, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 178075164461216608, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: m_IsActive
