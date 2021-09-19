@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CatHappiness : MonoBehaviour
 {
     [Tooltip("The maximum cat happiness that can be reached at the final level")]
-    public float ultimateMaxHappiness;
+    public float ultimateMaxHappiness = 100f;
     public float maxHappinessPerLevel;
     public float happinessDecreasePerSecond = -0.1f;
 
@@ -12,9 +14,14 @@ public class CatHappiness : MonoBehaviour
 
     public Events eventSystem;
 
+    /** UI **/
+    public Slider progressBar;
+
     void Awake()
     {
-        currentHappiness = maxHappinessPerLevel;
+        currentHappiness = 0f;
+        UpdateProgressBar();
+
         currentTime = 0f;
 
         eventSystem.CatHappinessChanged += OnCatHappinessChanged;
@@ -56,5 +63,15 @@ public class CatHappiness : MonoBehaviour
         }
 
         GameManager.Instance.currentCatHappiness = currentHappiness;
+
+        UpdateProgressBar();
+    }
+
+    private void UpdateProgressBar()
+    {
+        // Set the slider to the actual value
+        float currentHappiness0To1Range = currentHappiness / ultimateMaxHappiness;
+        progressBar.value = currentHappiness0To1Range;
     }
 }
+
