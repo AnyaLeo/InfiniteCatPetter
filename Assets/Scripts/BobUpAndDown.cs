@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BobUpAndDown : MonoBehaviour
+{
+    Vector2 posOffset;
+
+    Vector2 tempPos;
+    public float frequency = 2f;
+    public float amplitude = 2f;
+
+    void Start()
+    {
+        // Store the starting position & rotation of the object
+        posOffset = transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Float up/down with a Sin()
+        tempPos = posOffset;
+        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+
+        transform.position = tempPos;
+    }
+}
