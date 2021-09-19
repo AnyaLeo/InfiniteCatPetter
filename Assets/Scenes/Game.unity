@@ -1968,6 +1968,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1515178983}
     - target: {fileID: 33731356, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemPrice
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 33731356, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: priceTextUI
       value: 
       objectReference: {fileID: 573167665}
@@ -2016,6 +2020,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1515178983}
     - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemPrice
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: priceTextUI
       value: 
       objectReference: {fileID: 834515141}
@@ -2055,6 +2063,10 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemPrice
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: priceTextUI
       value: 
@@ -2129,7 +2141,7 @@ PrefabInstance:
       objectReference: {fileID: 1515178983}
     - target: {fileID: 1182854136, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemPrice
-      value: 300
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1182854136, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: priceTextUI
@@ -2163,6 +2175,10 @@ PrefabInstance:
       propertyPath: popUpDescription
       value: 
       objectReference: {fileID: 1515178983}
+    - target: {fileID: 1192970820, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: itemPrice
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1192970820, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: priceTextUI
       value: 
@@ -2237,7 +2253,7 @@ PrefabInstance:
       objectReference: {fileID: 1515178983}
     - target: {fileID: 1750270443, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemPrice
-      value: 200
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1750270443, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: priceTextUI
