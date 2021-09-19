@@ -32,6 +32,9 @@ public class ShopItem : MonoBehaviour
             changeActiveTool();
         }
         priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "$" + (int)itemPrice;
+        if (itemPrice.Equals(0)) {
+            priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "FREE!";
+        }
 
     }
 
@@ -80,6 +83,10 @@ public class ShopItem : MonoBehaviour
     private void changeActiveTool()
     {
         GameManager.Instance.catHairGainBonus = hairGainEffect;
-        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        if (isItemBought)
+        {
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        }
+        
     }
 }
