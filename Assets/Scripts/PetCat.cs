@@ -10,6 +10,8 @@ public class PetCat : MonoBehaviour
 
     public float catHappinessPerPet = 5f;
 
+    public GameObject catParticles;
+
     void Awake()
     {
         float mouseXValue = Input.GetAxis("Mouse X");
@@ -32,6 +34,10 @@ public class PetCat : MonoBehaviour
         {
             print("Working");
             Events.Instance.CatHappinessChanged(catHappinessPerPet);
+
+            GameObject particleSystem = Instantiate(catParticles);
+            particleSystem.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            particleSystem.transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
     }
 }

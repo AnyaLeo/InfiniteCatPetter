@@ -15,13 +15,11 @@ public class CatHappiness : MonoBehaviour
     public Events eventSystem;
 
     /** UI **/
-    public TextMeshProUGUI happinessText;
     public Slider progressBar;
 
     void Awake()
     {
         currentHappiness = 0f;
-        happinessText.text = "0";
         UpdateProgressBar();
 
         currentTime = 0f;
@@ -74,14 +72,6 @@ public class CatHappiness : MonoBehaviour
         // Set the slider to the actual value
         float currentHappiness0To1Range = currentHappiness / ultimateMaxHappiness;
         progressBar.value = currentHappiness0To1Range;
-    }
-}
-
-public static class ExtensionMethods
-{
-    public static float Remap(this float value, float from1, float to1, float from2, float to2)
-    {
-        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
 }
 

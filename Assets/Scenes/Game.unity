@@ -346,7 +346,6 @@ MonoBehaviour:
   maxHappinessPerLevel: 30
   happinessDecreasePerSecond: 1
   eventSystem: {fileID: 518272347}
-  happinessText: {fileID: 0}
   progressBar: {fileID: 2097269241}
 --- !u!1 &359900112
 GameObject:
@@ -821,6 +820,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3828330135963178491, guid: e1eddcda8d97c4f229f5d2dc937310e2, type: 3}
+      propertyPath: catParticles
+      value: 
+      objectReference: {fileID: 7088229077929147682, guid: 0364cfb2707e6044da4308eaec87c8b5, type: 3}
     - target: {fileID: 3828330135963178492, guid: e1eddcda8d97c4f229f5d2dc937310e2, type: 3}
       propertyPath: m_Name
       value: CatSquare
@@ -1049,7 +1052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5.600006}
+  m_AnchoredPosition: {x: 0, y: -5.6000366}
   m_SizeDelta: {x: 375.02, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2097269241
