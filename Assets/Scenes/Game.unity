@@ -1708,7 +1708,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 369616291141916618, guid: c923b1237c215410d8e7c955d16713f1, type: 3}
       propertyPath: m_Text
-      value: + Cat Hair
+      value: + Magic Gems
       objectReference: {fileID: 0}
     - target: {fileID: 8647906499454568065, guid: c923b1237c215410d8e7c955d16713f1, type: 3}
       propertyPath: m_Name
