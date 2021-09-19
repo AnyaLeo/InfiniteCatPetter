@@ -18,6 +18,9 @@ public class ShopUI : MonoBehaviour
     [SerializeField]
     private GameObject shopBoxUI;
 
+    public GameObject petMenuText;
+    public GameObject envrMenuText;
+
     private bool isShopVisible;
     private bool isEnvVisible;
     private bool isPetVisible;
@@ -31,6 +34,9 @@ public class ShopUI : MonoBehaviour
             child.gameObject.SetActive(false);
         }
 
+        petMenuText.SetActive(false);
+        envrMenuText.SetActive(false);
+
         isShopVisible = false;
     }
 
@@ -43,6 +49,9 @@ public class ShopUI : MonoBehaviour
                 child.gameObject.SetActive(false);
             }
             isShopVisible = false;
+
+            petMenuText.SetActive(false);
+            envrMenuText.SetActive(false);
         } else
         {
             foreach (Transform child in shopIconBtn.transform)
@@ -54,6 +63,9 @@ public class ShopUI : MonoBehaviour
             petMenuBtn.SetActive(true);
             petMenuBtnOff.SetActive(false);
             isShopVisible = true;
+
+            petMenuText.SetActive(true);
+            envrMenuText.SetActive(true);
         }
         Debug.Log("click shop");
     }
@@ -76,6 +88,9 @@ public class ShopUI : MonoBehaviour
             petMenuBtn.SetActive(false);
             petMenuBtnOff.SetActive(true);
 
+            petMenuText.SetActive(true);
+            envrMenuText.SetActive(true);
+
         }
 
         // click petMenuBtn
@@ -93,6 +108,9 @@ public class ShopUI : MonoBehaviour
             envrMenuBtnOff.SetActive(true);
             petMenuBtn.SetActive(true);
             petMenuBtnOff.SetActive(false);
+
+            petMenuText.SetActive(true);
+            envrMenuText.SetActive(true);
         }
     }
 }
