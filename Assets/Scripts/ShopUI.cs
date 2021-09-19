@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShopUI : MonoBehaviour
 {   
@@ -20,6 +21,11 @@ public class ShopUI : MonoBehaviour
 
     public GameObject petMenuText;
     public GameObject envrMenuText;
+    private TextMeshProUGUI petMenuTextMesh;
+    private TextMeshProUGUI envrMenuTextMesh;
+
+    public TMP_ColorGradient normalGradient;
+    public TMP_ColorGradient fadedGradient;
 
     private bool isShopVisible;
     private bool isEnvVisible;
@@ -27,7 +33,9 @@ public class ShopUI : MonoBehaviour
     
 
     private void Awake()
-    {   
+    {
+        petMenuTextMesh = petMenuText.GetComponent<TextMeshProUGUI>();
+        envrMenuTextMesh = envrMenuText.GetComponent<TextMeshProUGUI>();
 
         foreach(Transform child in shopIconBtn.transform)
         {
@@ -66,8 +74,11 @@ public class ShopUI : MonoBehaviour
 
             petMenuText.SetActive(true);
             envrMenuText.SetActive(true);
+
+            petMenuTextMesh.colorGradientPreset = normalGradient;
+            envrMenuTextMesh.colorGradientPreset = fadedGradient;
         }
-        Debug.Log("click shop");
+        //Debug.Log("click shop");
     }
 
     public void childClicked(GameObject gameObject)
@@ -91,6 +102,8 @@ public class ShopUI : MonoBehaviour
             petMenuText.SetActive(true);
             envrMenuText.SetActive(true);
 
+            petMenuTextMesh.colorGradientPreset = fadedGradient;
+            envrMenuTextMesh.colorGradientPreset = normalGradient;
         }
 
         // click petMenuBtn
@@ -111,6 +124,11 @@ public class ShopUI : MonoBehaviour
 
             petMenuText.SetActive(true);
             envrMenuText.SetActive(true);
+
+            petMenuTextMesh.colorGradientPreset = normalGradient;
+            envrMenuTextMesh.colorGradientPreset = fadedGradient;
         }
     }
+
+
 }

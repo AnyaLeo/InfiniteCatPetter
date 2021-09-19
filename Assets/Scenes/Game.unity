@@ -525,6 +525,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 770492552869413822, guid: da4ac08c3eb1673479deee7174b2227b, type: 3}
+      propertyPath: m_fontColorGradientPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e70468244f96774790505a50b31f3ce, type: 2}
+    - target: {fileID: 770492552869413822, guid: da4ac08c3eb1673479deee7174b2227b, type: 3}
       propertyPath: m_fontColorGradient.bottomLeft.b
       value: 0.65882355
       objectReference: {fileID: 0}
@@ -848,6 +852,10 @@ PrefabInstance:
       propertyPath: m_enableVertexGradient
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 770492552869413822, guid: 8fad5251b29482d40a5e53a5d8388076, type: 3}
+      propertyPath: m_fontColorGradientPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e70468244f96774790505a50b31f3ce, type: 2}
     - target: {fileID: 770492552869413822, guid: 8fad5251b29482d40a5e53a5d8388076, type: 3}
       propertyPath: m_fontColorGradient.bottomLeft.b
       value: 0.65882355
@@ -1828,6 +1836,14 @@ PrefabInstance:
       propertyPath: envrMenuText
       value: 
       objectReference: {fileID: 1350418963}
+    - target: {fileID: 178075164537146685, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: fadedGradient
+      value: 
+      objectReference: {fileID: 11400000, guid: eb80d5bc9fd31004c945ba674658f9e8, type: 2}
+    - target: {fileID: 178075164537146685, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: normalGradient
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e70468244f96774790505a50b31f3ce, type: 2}
     - target: {fileID: 178075164537146686, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: m_Name
       value: ShopIcon
@@ -2566,6 +2582,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 770492552869413822, guid: 0ffd946c9b7ffcb4cad7f347f3c9beec, type: 3}
+      propertyPath: m_fontColorGradientPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e70468244f96774790505a50b31f3ce, type: 2}
+    - target: {fileID: 770492552869413822, guid: 0ffd946c9b7ffcb4cad7f347f3c9beec, type: 3}
       propertyPath: m_fontColorGradient.topRight.b
       value: 1
       objectReference: {fileID: 0}
@@ -2645,6 +2665,10 @@ PrefabInstance:
       propertyPath: m_enableVertexGradient
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4367965496283293882, guid: 0ffd946c9b7ffcb4cad7f347f3c9beec, type: 3}
+      propertyPath: m_fontColorGradientPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e70468244f96774790505a50b31f3ce, type: 2}
     - target: {fileID: 4367965496283293882, guid: 0ffd946c9b7ffcb4cad7f347f3c9beec, type: 3}
       propertyPath: m_fontColorGradient.bottomLeft.b
       value: 0.65882355
