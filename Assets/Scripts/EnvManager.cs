@@ -22,13 +22,16 @@ public class EnvManager : MonoBehaviour
     {
         Debug.Log("Changing environment");
         int newLevel = GameManager.Instance.currentLevel;
-        for (int i = 0; i < envEffects.Length; i++)
-        {
-            if (newLevel <= i)
-            {
-                envEffects[i].SetActive(true);
-            }
-        }
+        //for (int i = 0; i < envEffects.Length; i++)
+        //{
+        //    if (newLevel <= i)
+        //    {
+        //        envEffects[i].SetActive(true);
+        //        Debug.Log("Set active " + envEffects[i].name + " index " + i);
+        //    }
+        //}
+
+        envEffects[newLevel - 1].SetActive(true);
         for (int i = 0; i < skyEffects.Length; i++)
         {
             if (i == newLevel - 1)
