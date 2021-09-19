@@ -14,7 +14,7 @@ public class CatHappiness : MonoBehaviour
 
     void Awake()
     {
-        currentHappiness = maxHappinessPerLevel;
+        currentHappiness = 0f;
         currentTime = 0f;
 
         eventSystem.CatHappinessChanged += OnCatHappinessChanged;
