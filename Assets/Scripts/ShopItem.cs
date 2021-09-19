@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class ShopItem : MonoBehaviour
 {
@@ -17,14 +18,20 @@ public class ShopItem : MonoBehaviour
     [SerializeField]
     private Color boughtColor;
 
+    [SerializeField]
+    private string soldText;
+    [SerializeField]
+    private GameObject priceTextUI;
+
     public Texture2D cursorTexture;
 
     private void Start()
-    {
+    {   
         if (isItemBought)
         {
             changeActiveTool();
         }
+        
     }
 
     public void OnMouseDown()
@@ -53,6 +60,7 @@ public class ShopItem : MonoBehaviour
 
         isItemBought = true;
         greyOutBought();
+        priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "SOLD!";
         float happinessDecrease = GameManager.Instance.awayDecreaseRate * timeTaken;
 
         GameManager.Instance.currentMoney -= itemPrice;
