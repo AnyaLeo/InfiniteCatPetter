@@ -30,11 +30,6 @@ public class ShopUI : MonoBehaviour
         isShopVisible = false;
     }
 
-    private void Update()
-    {
-        
-    }
-
     void OnMouseDown()
     {   
         if (isShopVisible)

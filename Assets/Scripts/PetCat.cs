@@ -9,6 +9,7 @@ public class PetCat : MonoBehaviour
     Vector3 mousepos;
 
     public float catHappinessPerPet = 5f;
+    public float catHairPerPet = 1f;
 
     public GameObject catParticles;
 
@@ -34,6 +35,7 @@ public class PetCat : MonoBehaviour
         {
             print("Working");
             Events.Instance.CatHappinessChanged(catHappinessPerPet);
+            GameManager.Instance.currentCatHair += catHairPerPet;
 
             //GameObject particleSystem = Instantiate(catParticles);
             //particleSystem.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);

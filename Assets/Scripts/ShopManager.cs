@@ -6,22 +6,44 @@ public class ShopManager : MonoBehaviour
 {   
     [SerializeField]
     private ArrayList shopItems;
+    private ArrayList shopItemsEnv;
 
     private void Awake()
     {
+        Debug.Log("Shop manager is awake");
         shopItems = new ArrayList();
+        shopItemsEnv = new ArrayList();
+
+        GameObject shopObject = GameObject.Find("Canvas/ShopIcon");
+        Transform transform = shopObject.GetComponent<Transform>();
 
         foreach (Transform child in transform)
         {   
-            if (child.GetComponent<ShopItem>() != null)
-            {
-                shopItems.Add(child);
+            foreach (Transform grandchild in child)
+            {   
+                foreach (Transform greatGrandchild in grandchild)
+                {   
+                    // Debug.Log("greatgrandchild " + greatGrandchild);
+                    if (greatGrandchild.GetComponent<ShopItem>() != null)
+                    {
+                        shopItems.Add(greatGrandchild);
+                        // Debug.Log("Found pet item");
+                    } else if (greatGrandchild.GetComponent<ShopItemEnvironment>() != null)
+                    {
+                        shopItemsEnv.Add(greatGrandchild);
+                        // Debug.Log("Found env item");
+                    }
+                }
             }
         }
 
         foreach (var item in shopItems)
         {
-            Debug.Log(item);
+            Debug.Log("Pet item: " + item);
+        }
+        foreach (var item in shopItemsEnv)
+        {
+            Debug.Log("Env Item: " + item);
         }
     }
 }

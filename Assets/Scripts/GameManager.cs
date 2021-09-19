@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public float currentCatHappiness;
-    public float currentCatHair;
-    public float currentMoney;
+    public float currentCatHappiness = 0;
+    public float currentCatHair = 0;
+    public float currentMoney = 0;
 
     public int currentLevel;
     public int maxLevels = 5;
