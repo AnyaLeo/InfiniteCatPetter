@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public float currentCatHappiness;
-    public float currentCatHair;
+    
     public float currentMoney;
 
     public int currentLevel;

@@ -7,6 +7,7 @@ public class PetCat : MonoBehaviour
     float mousex1;
     float mousey1;
     Vector3 mousepos;
+    public float increment = 1;
 
     public float catHappinessPerPet = 5f;
 
@@ -57,6 +58,8 @@ public class PetCat : MonoBehaviour
             }
 
             Events.Instance.CatHappinessChanged(catHappinessPerPet);
+            CatHairManager.Instance.ChangeCatHair(increment);
+
         }
     }
 }

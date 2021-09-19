@@ -7,6 +7,9 @@ public class SellButtonUI : MonoBehaviour
     void OnMouseDown()
     {   
         Debug.Log("Clicked sell");
-        GameObject.Find("MoneyManager").GetComponent<MoneyManager>().OnCatHairSold();
+        CatHairManager.Instance.ChangeCatHair(CatHairManager.Instance.currentCatHair);
+        MoneyManager.Instance.OnCatHairSold();
+        
+
     }
 }
