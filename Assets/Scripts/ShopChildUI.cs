@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ShopChildUI : MonoBehaviour
 {   
-    [SerializeField]
-    private GameObject popUpDescription;
 
     private void OnMouseDown()
     {

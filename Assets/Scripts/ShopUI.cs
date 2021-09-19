@@ -10,6 +10,10 @@ public class ShopUI : MonoBehaviour
     [SerializeField]
     private GameObject petMenuBtn;
     [SerializeField]
+    private GameObject envrMenuBtnOff;
+    [SerializeField]
+    private GameObject petMenuBtnOff;
+    [SerializeField]
     private GameObject shopIconBtn;
     [SerializeField]
     private GameObject shopBoxUI;
@@ -45,14 +49,19 @@ public class ShopUI : MonoBehaviour
             {
                 child.gameObject.SetActive(true);
             }
+            envrMenuBtn.SetActive(false);
+            envrMenuBtnOff.SetActive(true);
+            petMenuBtn.SetActive(true);
+            petMenuBtnOff.SetActive(false);
             isShopVisible = true;
         }
         Debug.Log("click shop");
     }
 
     public void childClicked(GameObject gameObject)
-    {
-        if (gameObject.Equals(envrMenuBtn))
+    {   
+        // click envrMenubtn
+        if (gameObject.Equals(envrMenuBtnOff))
         {   
             foreach (Transform child in petMenuBtn.transform)
             {
@@ -62,11 +71,15 @@ public class ShopUI : MonoBehaviour
             {
                 child.gameObject.SetActive(true);
             }
-            envrMenuBtn.GetComponent<SpriteRenderer>().color = new Color(106, 106, 106);
-            petMenuBtn.GetComponent<SpriteRenderer>().color = new Color(176, 176, 176);
+            envrMenuBtn.SetActive(true);
+            envrMenuBtnOff.SetActive(false);
+            petMenuBtn.SetActive(false);
+            petMenuBtnOff.SetActive(true);
+
         }
 
-        if (gameObject.Equals(petMenuBtn))
+        // click petMenuBtn
+        if (gameObject.Equals(petMenuBtnOff))
         {
             foreach (Transform child in envrMenuBtn.transform)
             {
@@ -76,16 +89,10 @@ public class ShopUI : MonoBehaviour
             {
                 child.gameObject.SetActive(true);
             }
-            petMenuBtn.GetComponent<SpriteRenderer>().color = new Color(106, 106, 106);
-            envrMenuBtn.GetComponent<SpriteRenderer>().color = new Color(176, 176, 176);
+            envrMenuBtn.SetActive(false);
+            envrMenuBtnOff.SetActive(true);
+            petMenuBtn.SetActive(true);
+            petMenuBtnOff.SetActive(false);
         }
-        /*foreach (Transform child in shopIconBtn.transform)
-        {
-            child.gameObject.SetActive(false);
-        }
-        gameObject.SetActive(true);
-        shopBoxUI.SetActive(true);
-        envrMenuBtn.SetActive(true);
-        petMenuBtn.SetActive(true);*/
     }
 }
