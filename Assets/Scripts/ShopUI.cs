@@ -57,13 +57,40 @@ public class ShopUI : MonoBehaviour
 
     public void childClicked(GameObject gameObject)
     {
-        foreach (Transform child in shopIconBtn.transform)
+        if (gameObject.Equals(envrMenuBtn))
+        {   
+            foreach (Transform child in petMenuBtn.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            foreach (Transform child in envrMenuBtn.transform)
+            {
+                child.gameObject.SetActive(true);
+            }
+            envrMenuBtn.GetComponent<SpriteRenderer>().color = new Color(106, 106, 106);
+            petMenuBtn.GetComponent<SpriteRenderer>().color = new Color(176, 176, 176);
+        }
+
+        if (gameObject.Equals(petMenuBtn))
+        {
+            foreach (Transform child in envrMenuBtn.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            foreach (Transform child in petMenuBtn.transform)
+            {
+                child.gameObject.SetActive(true);
+            }
+            petMenuBtn.GetComponent<SpriteRenderer>().color = new Color(106, 106, 106);
+            envrMenuBtn.GetComponent<SpriteRenderer>().color = new Color(176, 176, 176);
+        }
+        /*foreach (Transform child in shopIconBtn.transform)
         {
             child.gameObject.SetActive(false);
         }
         gameObject.SetActive(true);
         shopBoxUI.SetActive(true);
         envrMenuBtn.SetActive(true);
-        petMenuBtn.SetActive(true);
+        petMenuBtn.SetActive(true);*/
     }
 }
