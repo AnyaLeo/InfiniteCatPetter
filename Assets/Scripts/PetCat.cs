@@ -7,9 +7,12 @@ public class PetCat : MonoBehaviour
     float mousex1;
     float mousey1;
     Vector3 mousepos;
+    private Vector3 objectPos;
 
     public float catHappinessPerPet = 5f;
     public float catHairPerPet = 1f;
+
+    public GameObject FloatingText;
 
     private float lastTimePetHappened;
     [Tooltip("How long we wait since the last pet to cancel the purr")]
@@ -51,6 +54,8 @@ public class PetCat : MonoBehaviour
     private void OnMouseUp()
     {
         mousepos = Input.mousePosition;
+        mousepos.z = 2.0f;
+        objectPos = Camera.main.ScreenToWorldPoint(mousepos);
         float dist = Mathf.Sqrt(Mathf.Pow((mousepos.x - mousex1), 2) + Mathf.Pow((mousepos.y - mousey1), 2));
         if (dist > 50)
         {
@@ -62,6 +67,7 @@ public class PetCat : MonoBehaviour
 
             Events.Instance.CatHappinessChanged(catHappinessPerPet);
             CatHairManager.Instance.ChangeCatHair(catHairPerPet);
+            Instantiate(FloatingText, objectPos, Quaternion.identity);
 
         }
     }
