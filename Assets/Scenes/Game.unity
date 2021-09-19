@@ -1349,6 +1349,18 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 178075165374585590, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7311321
+      objectReference: {fileID: 0}
+    - target: {fileID: 178075165374585590, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7311321
+      objectReference: {fileID: 0}
+    - target: {fileID: 178075165374585590, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 178075165550573537, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1574,6 +1586,10 @@ PrefabInstance:
     - target: {fileID: 8663962655238967488, guid: 5afb1b5a40dd9f64a80bc8f31c0200f7, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663962655238967488, guid: 5afb1b5a40dd9f64a80bc8f31c0200f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8663962655238967489, guid: 5afb1b5a40dd9f64a80bc8f31c0200f7, type: 3}
       propertyPath: m_Pivot.x
