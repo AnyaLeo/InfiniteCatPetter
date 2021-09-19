@@ -11,10 +11,13 @@ public class ShopUI : MonoBehaviour
     private GameObject petMenuBtn;
     [SerializeField]
     private GameObject shopIconBtn;
+    [SerializeField]
+    private GameObject shopBoxUI;
 
     private bool isShopVisible;
     private bool isEnvVisible;
     private bool isPetVisible;
+    
 
     private void Awake()
     {   
@@ -25,6 +28,11 @@ public class ShopUI : MonoBehaviour
         }
 
         isShopVisible = false;
+    }
+
+    private void Update()
+    {
+        
     }
 
     void OnMouseDown()
@@ -45,5 +53,17 @@ public class ShopUI : MonoBehaviour
             isShopVisible = true;
         }
         Debug.Log("click shop");
+    }
+
+    public void childClicked(GameObject gameObject)
+    {
+        foreach (Transform child in shopIconBtn.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        gameObject.SetActive(true);
+        shopBoxUI.SetActive(true);
+        envrMenuBtn.SetActive(true);
+        petMenuBtn.SetActive(true);
     }
 }
