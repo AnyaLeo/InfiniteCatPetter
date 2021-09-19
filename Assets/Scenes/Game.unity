@@ -171,6 +171,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &33731356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33731351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a75a385fc73a419d839f8486fdfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: P2
+  itemPrice: 10
+  happinessEffect: 5
+  hairGainEffect: 1
+  timeTaken: 2
+  isItemBought: 0
 --- !u!1 &83669007
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +474,27 @@ MonoBehaviour:
   happinessDecreasePerSecond: 1
   eventSystem: {fileID: 518272347}
   progressBar: {fileID: 2097269241}
+--- !u!1 &346828450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6827505268874683649, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+  m_PrefabInstance: {fileID: 1348426354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &346828451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346828450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E4
+  itemPrice: 400
+  upgradeId: 4
+  isItemBought: 0
 --- !u!1 &359900112
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +910,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &545383837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545383832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a75a385fc73a419d839f8486fdfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: P4
+  itemPrice: 10
+  happinessEffect: 5
+  hairGainEffect: 1
+  timeTaken: 2
+  isItemBought: 0
 --- !u!1001 &551245646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1060,6 +1117,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &799546204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799546199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a75a385fc73a419d839f8486fdfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: P0
+  itemPrice: 10
+  happinessEffect: 5
+  hairGainEffect: 1
+  timeTaken: 2
+  isItemBought: 0
 --- !u!1 &850624424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1292,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &896940795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896940790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a75a385fc73a419d839f8486fdfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: P1
+  itemPrice: 10
+  happinessEffect: 5
+  hairGainEffect: 1
+  timeTaken: 2
+  isItemBought: 0
 --- !u!1 &958128099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1474,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &1037414547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037414544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E1
+  itemPrice: 200
+  upgradeId: 1
+  isItemBought: 0
 --- !u!1 &1076917211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,6 +1628,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &1182854136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182854133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E3
+  itemPrice: 300
+  upgradeId: 3
+  isItemBought: 0
 --- !u!1 &1192970815 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 178075165048552144, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
@@ -1567,6 +1692,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &1192970820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192970815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a75a385fc73a419d839f8486fdfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: P3
+  itemPrice: 10
+  happinessEffect: 5
+  hairGainEffect: 1
+  timeTaken: 2
+  isItemBought: 0
 --- !u!1001 &1284883266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1811,7 +1954,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1662298922887123066, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5012136033402420225, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4583890779790483802, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 5038038627798766705, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 8728886044828763389, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 591773119042957526, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 2258070700293216346, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 6255558908146828677, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 6928084638557053302, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 2589072107293270332, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 7471527921565108339, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 2290640075330489898, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 7159832501220604999, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 7382163080043787120, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 7848833980128783125, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 1662298922887123066, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 3905229162395238101, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 626976433002671920, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 7165000919187824635, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+    - {fileID: 4795189468154431132, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
 --- !u!224 &1348426355 stripped
 RectTransform:
@@ -1866,6 +2035,22 @@ MonoBehaviour:
   itemdescriptorUI: {fileID: 1515178979}
   itemTitle: ITEM 1
   itemDescription: ITEM 1 DESCRIPTION
+--- !u!114 &1348426361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348426356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E0
+  itemPrice: 100
+  upgradeId: 0
+  isItemBought: 0
 --- !u!1001 &1515178977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2023,11 +2208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8663962655238967489, guid: 5afb1b5a40dd9f64a80bc8f31c0200f7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -388.88
+      value: -730.91
       objectReference: {fileID: 0}
     - target: {fileID: 8663962655238967489, guid: 5afb1b5a40dd9f64a80bc8f31c0200f7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -48.81
+      value: -171
       objectReference: {fileID: 0}
     - target: {fileID: 8663962655238967489, guid: 5afb1b5a40dd9f64a80bc8f31c0200f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2522,6 +2707,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &1750270443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750270440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E2
+  itemPrice: 200
+  upgradeId: 2
+  isItemBought: 0
 --- !u!1 &1821609335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,6 +2859,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &1944675950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944675947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E4
+  itemPrice: 400
+  upgradeId: 4
+  isItemBought: 0
 --- !u!1 &2097269239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,6 +3013,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &2102998814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102998809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a75a385fc73a419d839f8486fdfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: P5
+  itemPrice: 10
+  happinessEffect: 5
+  hairGainEffect: 1
+  timeTaken: 2
+  isItemBought: 0
 --- !u!1 &2112788805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 178075165904767326, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
@@ -2844,3 +3079,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.16, y: 2.76}
   m_EdgeRadius: 0
+--- !u!114 &2112788808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112788805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f55a02d0166e4cbb0ca2cdfb161e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: E4
+  itemPrice: 400
+  upgradeId: 4
+  isItemBought: 0
