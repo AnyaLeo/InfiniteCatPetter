@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MoneyManager : Singleton<MoneyManager>
 {
     public Events eventSystem;
-    
+
+    public TextMeshProUGUI moneyText;
 
     void Awake()
     {
         eventSystem.CatHairSold += OnCatHairSold;
+    }
+
+    private void Start()
+    {
+        moneyText.text = GameManager.Instance.currentMoney.ToString("f0");
     }
 
     private void OnDisable()
@@ -37,6 +44,7 @@ public class MoneyManager : Singleton<MoneyManager>
     private void AddToMoney(float moneyEarned)
     {
         GameManager.Instance.currentMoney += moneyEarned;
+        moneyText.text = GameManager.Instance.currentMoney.ToString("f0");
     }
 
     private void removeCatHair(float catHairSold)
