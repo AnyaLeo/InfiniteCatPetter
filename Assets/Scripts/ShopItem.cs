@@ -17,17 +17,28 @@ public class ShopItem : MonoBehaviour
     [SerializeField]
     private Color boughtColor;
 
+    public Texture2D cursorTexture;
+
+    private void Start()
+    {
+        if (isItemBought)
+        {
+            changeActiveTool();
+        }
+    }
+
     public void OnMouseDown()
     {
         if (isItemBought)
         {
-            Debug.Log("Already bought item: " + itemName);
+            //Debug.Log("Already bought item: " + itemName);
             changeActiveTool();
         }
         else
         {
-            Debug.Log("Buying item: " + itemName);
+            //Debug.Log("Buying item: " + itemName);
             BuyItem();
+            changeActiveTool();
         }
     }
 
@@ -60,5 +71,6 @@ public class ShopItem : MonoBehaviour
     private void changeActiveTool()
     {
         GameManager.Instance.catHairGainBonus = hairGainEffect;
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
     }
 }

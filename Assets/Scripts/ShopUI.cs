@@ -27,6 +27,8 @@ public class ShopUI : MonoBehaviour
     public TMP_ColorGradient normalGradient;
     public TMP_ColorGradient fadedGradient;
 
+    public Texture2D initialCursorTexture;
+
     private bool isShopVisible;
     private bool isEnvVisible;
     private bool isPetVisible;
@@ -46,6 +48,8 @@ public class ShopUI : MonoBehaviour
         envrMenuText.SetActive(false);
 
         isShopVisible = false;
+
+        Cursor.SetCursor(initialCursorTexture, Vector2.zero, CursorMode.Auto);
     }
 
     void OnMouseDown()

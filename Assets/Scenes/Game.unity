@@ -1806,6 +1806,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1515178983}
     - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: isItemBought
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: boughtColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1821,6 +1825,10 @@ PrefabInstance:
       propertyPath: boughtColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 799546204, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: cursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: f427a668bbd5f3d448d09dd3f71b925f, type: 3}
     - target: {fileID: 896940791, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
@@ -1849,6 +1857,10 @@ PrefabInstance:
       propertyPath: boughtColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 896940795, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
+      propertyPath: cursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: 73c5add144d8dc14a9b19f356601e13b, type: 3}
     - target: {fileID: 1037414545, guid: fbe99096eed73b34da90d83d67561bce, type: 3}
       propertyPath: itemTitleUI
       value: 
