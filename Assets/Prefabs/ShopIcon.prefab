@@ -127,8 +127,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 5 TITLE
-  itemDescription: ITEM 5 DESCRIPTION
+  itemTitle: dnaH
+  itemDescription: A reliable hand to give reliable scritches.
 --- !u!114 &799546204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +148,9 @@ MonoBehaviour:
   timeTaken: 2
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
+  cursorTexture: {fileID: 0}
 --- !u!1 &178075164064920327
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,8 +278,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 7 TITLE
-  itemDescription: ITEM 7 DESCRIPTION
+  itemTitle: bmoC
+  itemDescription: A nice comb to clear up tangles.
 --- !u!114 &896940795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +299,9 @@ MonoBehaviour:
   timeTaken: 2
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
+  cursorTexture: {fileID: 0}
 --- !u!1 &178075164231605538
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,8 +429,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 4 TITLE
-  itemDescription: ITEM 4 DESCRIPTION
+  itemTitle: seldnaC
+  itemDescription: What's a magic store without candles? A must-have.
 --- !u!114 &1750270443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +448,8 @@ MonoBehaviour:
   upgradeId: 2
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &178075164333598760
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +826,7 @@ MonoBehaviour:
   envrMenuText: {fileID: 0}
   normalGradient: {fileID: 0}
   fadedGradient: {fileID: 0}
+  initialCursorTexture: {fileID: 0}
 --- !u!61 &178075164537146674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1053,8 +1062,9 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 6 TITLE
-  itemDescription: ITEM 6 DESCRIPTION
+  itemTitle: elcriC gninommuS
+  itemDescription: Wait... Who are we summoning again? It's fine, my cat will tell
+    me.
 --- !u!114 &1182854136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,6 +1082,8 @@ MonoBehaviour:
   upgradeId: 3
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &178075165048552144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,8 +1211,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 6 TITLE
-  itemDescription: ITEM 6 DESCRIPTION
+  itemTitle: hsurB cigaM
+  itemDescription: There's something odd about this brush, but it looks cool.
 --- !u!114 &1192970820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,6 +1232,9 @@ MonoBehaviour:
   timeTaken: 2
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
+  cursorTexture: {fileID: 0}
 --- !u!1 &178075165267953339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,8 +1362,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 7 TITLE
-  itemDescription: ITEM 7 DESCRIPTION
+  itemTitle: llaB latsyrC
+  itemDescription: You can watch the world burn with this.
 --- !u!114 &1037414547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,6 +1381,8 @@ MonoBehaviour:
   upgradeId: 1
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &178075165374585584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,8 +1510,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 4 TITLE
-  itemDescription: ITEM 4 DESCRIPTION
+  itemTitle: hsurB
+  itemDescription: A brush for the most magnificent of manes.
 --- !u!114 &33731356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,6 +1531,9 @@ MonoBehaviour:
   timeTaken: 2
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
+  cursorTexture: {fileID: 0}
 --- !u!1 &178075165550573539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,8 +1661,8 @@ MonoBehaviour:
   popUpDescription: {fileID: 0}
   itemTitleUI: {fileID: 0}
   itemdescriptorUI: {fileID: 0}
-  itemTitle: ITEM 1
-  itemDescription: ITEM 1 DESCRIPTION
+  itemTitle: eriomirG
+  itemDescription: A tome of mysterious power. Huh... is that cat talking?!
 --- !u!114 &1348426361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1660,6 +1680,8 @@ MonoBehaviour:
   upgradeId: 0
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &430304246540271516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1782,8 @@ MonoBehaviour:
   upgradeId: 3
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &575068294655374174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1884,8 @@ MonoBehaviour:
   upgradeId: 1
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &1582407611072703316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,6 +3575,8 @@ MonoBehaviour:
   upgradeId: 2
   isItemBought: 0
   boughtColor: {r: 0, g: 0, b: 0, a: 0}
+  soldText: 
+  priceTextUI: {fileID: 0}
 --- !u!1 &9093629813646292968
 GameObject:
   m_ObjectHideFlags: 0
