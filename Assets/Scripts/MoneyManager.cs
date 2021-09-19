@@ -49,7 +49,7 @@ public class MoneyManager : Singleton<MoneyManager>
 
     private void removeCatHair(float catHairSold)
     {
-        CatHairManager.Instance.currentCatHair -= catHairSold;
+        CatHairManager.Instance.ChangeCatHair(-catHairSold);
     }
 
 }
