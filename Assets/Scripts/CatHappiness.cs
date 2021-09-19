@@ -26,11 +26,13 @@ public class CatHappiness : MonoBehaviour
         currentTime = 0f;
 
         eventSystem.CatHappinessChanged += OnCatHappinessChanged;
+        eventSystem.LevelIncreased += increaseMaxHappiness;
     }
 
     private void OnDisable()
     {
         eventSystem.CatHappinessChanged -= OnCatHappinessChanged;
+        eventSystem.LevelIncreased -= increaseMaxHappiness;
     }
 
     private void OnCatHappinessChanged(float happinessChange)
@@ -73,6 +75,10 @@ public class CatHappiness : MonoBehaviour
         // Set the slider to the actual value
         float currentHappiness0To1Range = currentHappiness / ultimateMaxHappiness;
         progressBar.value = currentHappiness0To1Range;
+    }
+
+    private void increaseMaxHappiness() {
+        maxHappinessPerLevel += 14f;
     }
 }
 

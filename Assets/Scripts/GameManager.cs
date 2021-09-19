@@ -20,6 +20,7 @@ public class GameManager : Singleton<GameManager>
     public void IncrementCurrentLevel()
     {
         currentLevel++;
+        Events.Instance.LevelIncreased();
         
         if (currentLevel >= maxLevels)
         {
