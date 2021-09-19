@@ -35,9 +35,9 @@ public class PetCat : MonoBehaviour
             print("Working");
             Events.Instance.CatHappinessChanged(catHappinessPerPet);
 
-            GameObject particleSystem = Instantiate(catParticles);
-            particleSystem.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            particleSystem.transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //GameObject particleSystem = Instantiate(catParticles);
+            //particleSystem.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //particleSystem.transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
     }
 }
