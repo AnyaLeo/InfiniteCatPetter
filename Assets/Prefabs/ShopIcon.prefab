@@ -295,8 +295,8 @@ MonoBehaviour:
   itemName: P1
   itemPrice: 200
   happinessEffect: 5
-  hairGainEffect: 1
-  timeTaken: 2
+  hairGainEffect: 5
+  timeTaken: 4
   isItemBought: 0
   boughtColor: {r: 1, g: 1, b: 1, a: 1}
   soldText: 
@@ -1227,9 +1227,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: P3
   itemPrice: 1000
-  happinessEffect: 5
-  hairGainEffect: 1
-  timeTaken: 2
+  happinessEffect: 15
+  hairGainEffect: 15
+  timeTaken: 8
   isItemBought: 0
   boughtColor: {r: 1, g: 1, b: 1, a: 1}
   soldText: 
@@ -1526,9 +1526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: P2
   itemPrice: 500
-  happinessEffect: 5
-  hairGainEffect: 1
-  timeTaken: 2
+  happinessEffect: 10
+  hairGainEffect: 10
+  timeTaken: 6
   isItemBought: 0
   boughtColor: {r: 1, g: 1, b: 1, a: 1}
   soldText: 
