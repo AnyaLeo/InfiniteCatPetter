@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShopItemEnvironment : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class ShopItemEnvironment : MonoBehaviour
     public bool isItemBought = false;
     [SerializeField]
     private Color boughtColor;
+
+    [SerializeField]
+    private string soldText;
+    [SerializeField]
+    private GameObject priceTextUI;
 
     public void OnMouseDown()
     {
@@ -40,6 +46,7 @@ public class ShopItemEnvironment : MonoBehaviour
         }
 
         isItemBought = true;
+        priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "SOLD!";
         greyOutBought();
         GameManager.Instance.IncrementCurrentLevel();
         GameManager.Instance.currentMoney -= itemPrice;
