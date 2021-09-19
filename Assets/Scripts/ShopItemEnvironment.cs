@@ -18,6 +18,11 @@ public class ShopItemEnvironment : MonoBehaviour
     [SerializeField]
     private GameObject priceTextUI;
 
+    private void Awake()
+    {
+        priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "$" + (int)itemPrice;
+    }
+
     public void OnMouseDown()
     {
         if (isItemBought)

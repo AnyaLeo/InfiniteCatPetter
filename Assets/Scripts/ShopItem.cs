@@ -31,7 +31,8 @@ public class ShopItem : MonoBehaviour
         {
             changeActiveTool();
         }
-        
+        priceTextUI.GetComponentInParent<TextMeshProUGUI>().text = "$" + (int)itemPrice;
+
     }
 
     public void OnMouseDown()
