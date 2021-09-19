@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ShopItemEnvironment : MonoBehaviour
 {
-    public float itemName;
+    public string itemName;
     public float itemPrice;
+    [SerializeField]
+    int upgradeId;
     public bool isItemBought = false;
 
     public void OnMouseDown()
@@ -14,7 +16,12 @@ public class ShopItemEnvironment : MonoBehaviour
         {
             Debug.Log("Already bought item: " + itemName);
             // change active tool to item
-        } else 
+        } 
+        else if (upgradeId >= GameManager.Instance.currentLevel + 1)
+        {
+            Debug.Log("Can't buy this item yet: " + itemName);
+        } 
+        else 
         {
             Debug.Log("Buying item: " + itemName);
             BuyItem();
@@ -31,8 +38,7 @@ public class ShopItemEnvironment : MonoBehaviour
         }
 
         isItemBought = true;
-        GameManager.Instance.currentLevel++;
+        GameManager.Instance.IncrementCurrentLevel();
         GameManager.Instance.currentMoney -= itemPrice;
-        // TODO: implement item effects - see pet items
     }
 }

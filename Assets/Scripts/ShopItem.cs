@@ -38,7 +38,11 @@ public class ShopItem : MonoBehaviour
         }
 
         isItemBought = true;
+        float happinessDecrease = GameManager.Instance.awayDecreaseRate * timeTaken;
+
         GameManager.Instance.currentMoney -= itemPrice;
-        // TODO: include time away to buy item, hair gain effect, happiness effect
+        GameManager.Instance.catHairGainBonus = hairGainEffect;
+        Events.Instance.CatHappinessChanged(happinessDecrease);
+        Events.Instance.CatHappinessChanged(happinessEffect);
     }
 }

@@ -7,7 +7,6 @@ public class PetCat : MonoBehaviour
     float mousex1;
     float mousey1;
     Vector3 mousepos;
-    public float increment = 1;
 
     public float catHappinessPerPet = 5f;
     public float catHairPerPet = 1f;
@@ -37,6 +36,9 @@ public class PetCat : MonoBehaviour
         {
             catSounds.DeactivatePurr();
         }
+
+        // TODO: There's probably a better way for this
+        catHairPerPet = 1f + GameManager.Instance.catHairGainBonus;
     }
 
     private void OnMouseDown()
@@ -59,7 +61,7 @@ public class PetCat : MonoBehaviour
             }
 
             Events.Instance.CatHappinessChanged(catHappinessPerPet);
-            CatHairManager.Instance.ChangeCatHair(increment);
+            CatHairManager.Instance.ChangeCatHair(catHairPerPet);
 
         }
     }

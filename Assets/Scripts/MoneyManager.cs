@@ -24,7 +24,7 @@ public class MoneyManager : Singleton<MoneyManager>
         // May want to add bonus based on current cat happiness
         float catHairSold = CatHairManager.Instance.currentCatHair;
         float moneyEarned = catHairSold * 10f;
-        float happinessDecrease = -8f * 1f;
+        float happinessDecrease = GameManager.Instance.awayDecreaseRate * 8f;
 
         AddToMoney(moneyEarned);
         eventSystem.CatHappinessChanged?.Invoke(happinessDecrease);

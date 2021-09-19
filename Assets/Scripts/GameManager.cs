@@ -5,10 +5,12 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public float currentCatHappiness;
-    
     public float currentMoney;
 
-    public int currentLevel;
+    public float catHairGainBonus = 0f;
+    public float awayDecreaseRate = -1f;
+
+    public int currentLevel = 0;
     public int maxLevels = 5;
 
     public Texture2D cursorTexture;

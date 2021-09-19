@@ -7,6 +7,8 @@ public class ShopManager : MonoBehaviour
     [SerializeField]
     private ArrayList shopItems;
     private ArrayList shopItemsEnv;
+    private int[] petItemsBought;
+    private int[] envItemsBought;
 
     private void Awake()
     {
@@ -37,6 +39,9 @@ public class ShopManager : MonoBehaviour
             }
         }
 
+        envItemsBought = new int[shopItemsEnv.Count];
+        Debug.Log("test " + petItemsBought);
+
         foreach (var item in shopItems)
         {
             Debug.Log("Pet item: " + item);
@@ -45,5 +50,10 @@ public class ShopManager : MonoBehaviour
         {
             Debug.Log("Env Item: " + item);
         }
+    }
+
+    public bool isAllowedToBuy(GameObject gameObject)
+    {
+        return true;
     }
 }
