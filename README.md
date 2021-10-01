@@ -12,6 +12,9 @@ Programming by everyone else
 
 ## How to play
 
-Download one of the zipped Builds folders and give it a go!
+Download "Builds.zip" folder and give it a go!
 
-Web builds maybe coming. Sometime after the jam.
+To try out the game:
+1. Click on the "Builds.zip" item above
+2. Find the "download" button and click on it.
+3. Unzip the file on your computer and play the Infinite Cat Petter!
